@@ -1,5 +1,14 @@
+import Head from 'next/head'
+
 export default function Success() {
   return (
-    <span>success works</span>
+    <>
+      <Head>
+        <title>success | ignite shop | julia bresolin</title>
+      </Head>
+      <main>
+        <span>success works</span>
+      </main>
+    </>
   )
 }
