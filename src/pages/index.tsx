@@ -1,12 +1,4 @@
 import Head from 'next/head'
-import { styled } from '../styles'
-
-const Button = styled('button', {
-  backgroundColor: '$background',
-  borderRadius: 4,
-  border: 0,
-  paddind: '4px 8px',
-})
 
 export default function Home() {
   return (
@@ -17,7 +9,6 @@ export default function Home() {
 
       <main>
         <span>home works</span>
-        <Button>button works</Button>
       </main>
     </>
   )
