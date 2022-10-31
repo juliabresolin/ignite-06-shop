@@ -1,5 +1,13 @@
+import Head from 'next/head'
+
 export default function Home() {
   return (
-  <h1>hello world</h1>
+    <>
+      <Head>
+        <title>ignite shop | julia bresolin</title>
+      </Head>
+
+      <main>home works</main>
+    </>
   )
 }
