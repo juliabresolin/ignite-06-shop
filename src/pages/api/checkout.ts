@@ -12,7 +12,7 @@ export default async function handler(
   if (!priceId) return res.status(400).json({ error: 'priceId not found!' })
 
   const checkoutSession = await stripe.checkout.sessions.create({
-    success_url: `${process.env.APP_NEXT_URL}/success`,
+    success_url: `${process.env.APP_NEXT_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${process.env.APP_NEXT_URL}`,
     mode: 'payment',
     line_items: [
