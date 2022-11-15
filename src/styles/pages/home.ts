@@ -81,9 +81,4 @@ export const ProductBox = styled('div', {
       opacity: 1,
     },
   },
-
-  '&:last-child': {
-    borderTopRightRadius: 0,
-    borderBottomRightRadius: 0,
-  },
 })
