@@ -6,6 +6,7 @@ import { globalStyles } from '../styles/global'
 import { Container, Header } from '../styles/pages/app'
 
 import logoImg from '../assets/logo.svg'
+import { Cart } from '../components/Cart'
 
 globalStyles()
 
@@ -20,6 +21,8 @@ export default function App({ Component, pageProps }: AppProps) {
           <Handbag size={24} />
         </button>
       </Header>
+
+      <Cart />
 
       <Component {...pageProps} />
     </Container>
