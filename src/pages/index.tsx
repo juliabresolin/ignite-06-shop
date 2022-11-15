@@ -10,6 +10,8 @@ import { HomeContainer, ProductBox } from '../styles/pages/home'
 
 import 'keen-slider/keen-slider.min.css'
 import { Bag } from 'phosphor-react'
+import { useContext, useEffect } from 'react'
+import { CartContext } from '../contexts/CartContext'
 
 interface Product {
   id: string
@@ -29,6 +31,12 @@ export default function Home({ products }: HomeProps) {
       spacing: 48,
     },
   })
+
+  const { items } = useContext(CartContext)
+
+  useEffect(() => {
+    console.log(items)
+  }, [])
 
   return (
     <>
