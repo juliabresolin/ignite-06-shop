@@ -40,16 +40,38 @@ export const ProductBox = styled('div', {
     alignItems: 'center',
     justifyContent: 'space-between',
 
-    strong: {
-      fontSize: '$lg',
-      fontWeight: 'bold',
-      color: '$gray100',
+    div: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '0.25rem',
+
+      strong: {
+        fontSize: '$lg',
+        fontWeight: 'bold',
+        color: '$gray100',
+      },
+
+      span: {
+        fontSize: '$xl',
+        fontWeight: 'bold',
+        color: '$green400',
+      },
     },
 
-    span: {
-      fontSize: '$xl',
-      fontWeight: 'bold',
-      color: '$green400',
+    button: {
+      width: '3.5rem',
+      height: '3.5rem',
+      borderRadius: 6,
+      backgroundColor: '$green500',
+      border: 0,
+      color: '$white',
+      boxSizing: 'border-box',
+      cursor: 'pointer',
+      transition: 'background .2s',
+
+      '&:not(:disabled):hover': {
+        backgroundColor: '$green400',
+      },
     },
   },
 

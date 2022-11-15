@@ -9,6 +9,7 @@ import { formatPrice } from '../utils/formatPrice'
 import { HomeContainer, ProductBox } from '../styles/pages/home'
 
 import 'keen-slider/keen-slider.min.css'
+import { Bag } from 'phosphor-react'
 
 interface Product {
   id: string
@@ -46,8 +47,14 @@ export default function Home({ products }: HomeProps) {
               <ProductBox className="keen-slider__slide">
                 <Image src={product.imageUrl} width={520} height={480} alt="" />
                 <footer>
-                  <strong>{product.name}</strong>
-                  <span>{product.price}</span>
+                  <div>
+                    <strong>{product.name}</strong>
+                    <span>{product.price}</span>
+                  </div>
+
+                  <button type="button">
+                    <Bag size={32} />
+                  </button>
                 </footer>
               </ProductBox>
             </Link>
